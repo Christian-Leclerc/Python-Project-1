@@ -23,10 +23,10 @@ The location chosen was the city of Montréal, Québec, Canada and Bixi is the p
 There is 800 bike stations on the island and about 8000 Point of Interests with mainly the category of dining and restaurant (including bars).
 Montréal is known for having a lot of well rated restaurants at affordable price (or not...) in all the range of taste and decorum.
 
-The data had to be pulled from different imposed medium API:
-    - [Citybikes API](http://api.citybik.es/v2/) to collect the number of stations, their locations and number of bikes.
-    - [FourSquare API](https://location.foursquare.com/developer/) to collect the information about the POIs.
-    - [Yelp API](https://www.yelp.com/developers) for comparing the quality of informations about POIs with FourSquare.
+The data had to be pulled from different imposed medium API:<br>
+- [Citybikes API](http://api.citybik.es/v2/) to collect the number of stations, their locations and number of bikes.
+- [FourSquare API](https://location.foursquare.com/developer/) to collect the information about the POIs.
+- [Yelp API](https://www.yelp.com/developers) for comparing the quality of informations about POIs with FourSquare.
 
 The gitHub repo contains .md files (Markdown) with instructions and questions to answer about the dataset.
 
@@ -36,11 +36,11 @@ The gitHub repo contains .md files (Markdown) with instructions and questions to
 [yelp_foursquare_EDA.ipynb](/notebooks/yelp_foursquare_EDA.ipynb) Notebooks for a comprehensive overview of my process.
 
 For all APIs, this process was always the same:
-- 1) Read the API documentation
-- 2) Setup the request parameters
-- 3) Send the request (for Yelp, I had to do it by batch)
-- 4) Parse the json response
-- 5) Create a pandas dataframe with the dataset
+1) Read the API documentation
+2) Setup the request parameters
+3) Send the request (for Yelp, I had to do it by batch)
+4) Parse the json response
+5) Create a pandas dataframe with the dataset
 All dataset created can be found in the [data](/data) folder.
 
 
@@ -109,7 +109,8 @@ c) Repeat until satisfactory adjusted R².
 
 My strategy was to evaluate different models because the variables were all correlated and I wasn't expecting much of the regression. My models were based on these insights:
 
-- Review count was totally skewed. Enought to think that their was a kind of categorical underlying aspect of the charactericts: something like Underrated and Well rated.
+- Review count was totally skewed. Enought to think that their was a kind of categorical underlying aspect of the charactericts: something like Underrated and Well rated.<br>
+  
 ![Yelp_hist](/images/Yelp_hist.png)
 
 - Prices was strongly correlated to the other variables while none of the independant variables had a strong relationship with the dependant variable total_bikes
@@ -151,8 +152,7 @@ If we really need to predict the quanity of bike, we would need to consider all 
 ## Challenges
 There is 2 major parts of the project that were most challenging for me:<br>
 - Repeated cleaning of the data<br> 
-The cleaning phase seemed infinite. Before, between and after any action on the pandas dataframe, something odd was going on with the datatypes and I had to watch them closely (or getting an error). 
-<br>
+The cleaning phase seemed infinite. Before, between and after any action on the pandas dataframe, something odd was going on with the datatypes and I had to watch them closely (or getting an error). <br>
 - Deciding of which independant variables to evaluate<br>
 As a beginner data analyst, it's hard to figure out in advance, based on the data you see in your face, which variable should be use to answer the question. I didn't have much characteristic to check, but even then it seems too much.
 
