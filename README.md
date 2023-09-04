@@ -163,7 +163,7 @@ Of course, I could state that the missing values was an issue, but its the bread
 
 If I had more time, I would have collected the density of the population on the island around the stations to see if there is ENOUGH stations (not just bikes) per population per area. Because, we could think that bike rentals are a majority of transport for tourists, but in fact, most of the time the bikes are gone because people use it to go to work.
 
-### Tech stacks
+## Tech stacks
 
 - Language:
     - Python
