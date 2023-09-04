@@ -16,7 +16,7 @@ My goal, as a student, is to identify my strengths and weaknesses during the pro
 - [Results](#results)
 - [Challenges](#challenges)
 - [Future Goals](#future-goals)
-- [Tech stack](#tech-stack)
+- [Tech stacks](#tech-stacks)
 
 ## Project Background
 The location chosen was the city of Montréal, Québec, Canada and Bixi is the principal bike rental company.
